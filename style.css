@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    /* font-family: var(--font-secondary-); */
+    font-family: 'Fragment Mono', monospace;
+}
+
+:root{
+        --primary-color:rgb(199, 51, 51);
+        --secondary-color:rgb(255, 215, 162);
+}
+
+body{
+    /* background-image: linear-gradient(rgb(94, 0, 0),rgb(24,0,0)); */
+    background-color:rgb(24,0,0);
+    background-repeat: none;
+    background-size: 100vh;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.layer-1{
+    background-image: url(./assets/svg/wave-haikei.svg);
+}
+.space{
+    aspect-ratio: 960/130;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* HEADER SECTION */
+
+header{
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+header .container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+header nav li{
+    display: flex;
+    
+    list-style-type: none;
+    /* border-bottom: 1px solid wheat; */
+}
+
+header a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header .contact-us{
+    border: 1px solid var(--primary-color)  ;
+    padding: 2px 3px;
+    border-radius: 5px;
+}
+
+header .contact-us:hover{
+    border: 1px solid black  ;
+    background-color: white;
+    transition:0.5s ;
+
+    padding: 2px 3px;
+    border-radius: 5px;
+}
+
+
+/* MAIN SECTION */
+
+
+main{
+    height: calc(100vh - 88px);
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgb(94, 0, 0),rgb(24,0,0));
+}
+
+main .container{
+    width: 550px;
+    text-align: center;
+    color: white;
+}
+
+main .container p{
+    font-size: 18px;
+}
+
+main .container span{
+    /* color: rgb(255, 255, 255); */
+    border-radius: 15px;
+    font-size: 50px;
+    background-color: rgba(113, 113, 113, 0.375) ;
+    padding: 0px 15px;
+}
+
+
+/* SECTION ABOUT */
+
+section#cform{
+    background-color: rgba(255, 0, 0, 0.315);
+    padding: 100px;
+    
+}
+
+section#cform .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+section#cform .quote{
+    background-color: rgba(255, 0, 0, 0.548);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 15px;
+}
+
+section#cform hgroup{
+    padding: 10px;
+}
+
+section#cform hgroup h3{
+    padding: 15px;
+}
+
+section#cform .contact-form{
+    padding: 15px;
+} 
+
+section#cform .contact-form input{
+    width: 90%;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.539);
+    border: none;
+}
+
+section#cform .contact-form textarea{
+    width: 90%;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.539);
+    border: none;
+}
+
+section#cform .contact-form button{
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.539);
+    color: white;
+    border: none;
+}
+
+section#cform .contact-info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    text-shadow: 3px 3px 3px black;
+    align-items: center;
+}
+
+section#cform .contact-info a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 30px;
+}
